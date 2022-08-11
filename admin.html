@@ -3,7 +3,7 @@
 <head>
   <script src="/socket.io/socket.io.js"></script>
   <script>
-    let socket = io();
+    let socket = io("admin");
     let el;
 
     socket.on('time', (timeString) => {
@@ -19,8 +19,9 @@
 </head>
 
 <body>
+  <h1>ADMIN</h1>
   <p id="server-time"></p>
-  <button onclick="executePrint()">print</button>
+  <button onclick="executePrint()">EITA!</button>
 </body>
 
 </html>
